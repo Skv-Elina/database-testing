@@ -4,4 +4,4 @@
 - [SELECT-запросы](./MySQL/select.md)
 - [JOIN-запросы](./MySQL/join.md)
 ## 🌱 Mongodb 
-- [Список запросов](./)
+- [Список запросов](./MongoDB/mongo.md)
