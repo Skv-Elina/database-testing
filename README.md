@@ -1,4 +1,4 @@
-# Работа с базами данных 
+# 🗄️ Работа с базами данных 
 Работа с базами данных [интернет-магазина](https://intern.demoshopping.ru/) с использованием MySQL и MongoDB.
 ## 🐬 MySQL 
 - [SELECT-запросы](./MySQL/select.md)
