@@ -157,3 +157,44 @@ SELECT CAST(order_id AS CHAR) FROM orders;
 Результат:<br><br>
 <img src="./images/12.jpg" width="80%">
 <br><br><br>
+
+### **Задание 13:** 
+Используя оператор HAVING, посчитайте количество товаров в каждой категории, оставив только те категории, в которых количество товаров больше 15.
+
+**Запрос:**
+
+```sql
+SELECT count(name) AS products_count, category
+FROM products
+GROUP BY category HAVING count(name) > 15;
+```
+Результат:<br><br>
+<img src="./images/13.jpg" width="80%">
+<br><br><br>
+
+### **Задание 14:** 
+Используя оператор CASE опишите следующую логику:<br>
+Выведите компанию, категорию, стоимость и название товара, а также следующий текстовое сообщение:
+
+Если компания Apple, то в консоли должно вывестись "Это продукт компании Apple".
+
+Если компания Samsung, то в консоли должно вывестись "Это продукт компании Samsung".
+
+Если компания Huawei, то в консоли должно вывестись "Это продукт компании  Huawei".
+
+Если компания Xiaomi, то в консоли должно вывестись "Это продукт компании Xiaomi".
+
+**Запрос:**
+
+```sql
+SELECT manufacturer, category, price, name,
+CASE manufacturer
+WHEN 'Apple' THEN 'Это продукт компании Apple'
+WHEN 'Samsung' THEN 'Это продукт компании Samsung'
+WHEN 'Huawei' THEN 'Это продукт компании Huawei'
+WHEN 'Xiaomi' THEN 'Это продукт компании Xiaomi'
+END AS message FROM products;
+```
+Результат:<br><br>
+<img src="./images/14.jpg" width="80%">
+<br><br><br>
